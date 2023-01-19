@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-   title: MyString
-  description: MyText
-  image: MyString
-  price: 9.99
+product_one:
+   title: 'Product 1'
+   description: 'This is description'
+   image_url: 'http://www.face-image/image1.php'
+   price: 9.99
 
-two:
-   title: MyString
-  description: MyText
-  image: MyString
-  price: 9.99
+product_two:
+   title: 'Product 2'
+   description: 'Description of product 2'
+   image_url: 'http://www.face-image/image2.php'
+   price: 2.99

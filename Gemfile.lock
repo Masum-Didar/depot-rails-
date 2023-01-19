@@ -79,7 +79,7 @@ GEM
       net-smtp
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.17.0)
+    minitest (5.10.3)
     net-imap (0.3.4)
       date
       net-protocol
@@ -177,6 +177,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  minitest (~> 5.10.3)
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)
