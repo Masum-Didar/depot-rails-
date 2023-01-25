@@ -5,7 +5,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
     @product = products(:product_one)
     @update = {
       title: 'Lorem Ispam',
-      description: 'fgdjhfg fdkjhg fdkjhf ',
+      description: 'fgdjhfg fdkjhg fdkjhf' ,
       image_url: 'loream.jpg',
       price: 19.95
     }

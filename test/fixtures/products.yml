@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 product_one:
-   title: 'Product 1'
-   description: 'This is description'
-   image_url: 'http://www.face-image/image1.php'
+   title: Product 1
+   description: This is description
+   image_url: http://www.face-image/image1.php
    price: 9.99
 
 product_two:
@@ -11,3 +11,9 @@ product_two:
    description: 'Description of product 2'
    image_url: 'http://www.face-image/image2.php'
    price: 2.99
+
+ruby:
+   title: Programming Ruby 2.7
+   description: Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add Ruby to your toolbox.
+   price: 49.50
+   image_url: ruby.png
