@@ -36,6 +36,7 @@ body, body > p, body > ol, body > ul, body > td {
     }
 }
 
+
 #notice {
     color: #000 !important;
     border: 2px solid red;
@@ -64,6 +65,7 @@ body, body > p, body > ol, body > ul, body > td {
             padding: 0;
             li {
                 list-style: none;
+                    color: white;
                 a {
                     color: #bfb;
                     font-size: small;

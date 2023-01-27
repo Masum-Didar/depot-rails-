@@ -12,6 +12,12 @@ product_two:
    image_url: 'http://www.face-image/image2.php'
    price: 2.99
 
+two:
+   title: 'Product 2'
+   description: 'Description of product 2'
+   image_url: 'http://www.face-image/image2.php'
+   price: 2.99
+
 ruby:
    title: Programming Ruby 2.7
    description: Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add Ruby to your toolbox.
