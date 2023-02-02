@@ -1,3 +1,4 @@
+<% unless @cart.line_items.empty?%>
 <h3>Your Cart </h3>
 <table>
   <%# @cart.line_items.each do |item|%>
@@ -18,3 +19,4 @@
 
 
 <%= button_to 'Empty cart', @cart, method: :delete, data: {confirm: 'Are you sure?'} %>
+<% end %>
