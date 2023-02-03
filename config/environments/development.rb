@@ -31,6 +31,11 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  #If you’re doing
+  # development with multiple machines, you must disable this check. Do this
+  # by adding the following line
+  config.action_cable.disable_request_forgery_protection = true
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
