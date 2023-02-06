@@ -1,4 +1,18 @@
 Rails.application.configure do
+
+  Depot::Application.config do
+    config.action_mailer.deliery_method = :smtp
+    config.action_mailer.smtp_setting = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "domain.of.sender.net",
+      authentication: "plain",
+      user_name: "Masum",
+      password: "secret",
+      enable_starttls_auto: true
+    }
+  end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
