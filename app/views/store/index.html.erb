@@ -6,7 +6,7 @@
       <div class="entry" >
         <%= image_tag(product.image_url) %>
         <h4><%= product.title %></h4>
-        <p><%= sanitize(product.description) %></p>
+        <p><%= truncate(sanitize(product.description), length: 130) %></p>
         <div class="price_line">
           <span class="price"><%= number_to_currency( product.price )%></span>
           <%= button_to 'Add to Cart', line_items_path(product_id: product), remote: true %>

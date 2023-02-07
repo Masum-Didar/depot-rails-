@@ -1,5 +1,12 @@
-<h1>Order#shipped</h1>
+<h4>Pragmatic Order Shipped</h4>
 
 <p>
+  <table>
+    <tr>
+      <th colspan="2">Qty</th>
+      <th>Description</th>
+    </tr>
+    <%= render @order.line_items -%>
+  </table>
   <%= @greeting %>, find me in app/views/order_mailer/shipped.html.erb
 </p>
