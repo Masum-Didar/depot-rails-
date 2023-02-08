@@ -1,13 +1,14 @@
 Rails.application.configure do
 
-  Depot::Application.config do
-    config.action_mailer.deliery_method = :smtp
-    config.action_mailer.smtp_setting = {
+  Depot::Application.configure do
+    config.action_mailer.delivery_method = :smtp
+
+    config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
       domain: "domain.of.sender.net",
       authentication: "plain",
-      user_name: "Masum",
+      user_name: "dave",
       password: "secret",
       enable_starttls_auto: true
     }
