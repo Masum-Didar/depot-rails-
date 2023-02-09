@@ -15,17 +15,22 @@ Rails.application.routes.draw do
   end
 
   resources :users
-  resources :orders
-  resources :line_items
-  resources :carts
-  # get 'store/index'
-  root 'store#index', as: 'store_index'
-
-  #root_path
-
   resources :products do
     get :who_bought, on: :member
   end
+
+  scope '(:local)' do
+    resources :orders
+    resources :line_items
+    resources :carts
+    # get 'store/index'
+    root 'store#index', as: 'store_index', via: :all
+  end
+
+
+  #root_path
+
+
   # For details on the DSL available within this file,
   # see http://guides.rubyonrails.org/routing.html
 end
