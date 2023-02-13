@@ -50,3 +50,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'minitest', '~>5.10.3'
+
+group :production do
+  gem 'mysql2', '~> 0.4.0'
+end
+
+# Use Capistrano for deployment
+gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm', group: :development
+gem 'capistrano-bundler', group: :development
+gem 'capistrano-passenger', group: :development
